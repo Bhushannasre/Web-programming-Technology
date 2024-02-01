@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>bootstrap 4 responsive simple website -- fullyworld web tutorials</title>
+	<!-- main css file -->
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<!-- bootstrap cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<!-- font awesome cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+
+	<!-- home section  -->
+	<section class="container-fluid banner" id="home">
+		<div class="row">
+			<div class="nav2" id="nav2">
+				
+				<i class="fa fa-close" onclick="navclose();"></i>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-md-12 navigation-bar navbar" id="navigation-bar">
+				<div class="logo navbar-brand">
+					<a href="index.html">
+						Lorem<span>.</span>
+					</a>
+				</div>
+				<div class="menu-text"  onclick="navopen();">
+					<p class="menu-heading">MENU</p>
+					<i class="fa fa-bars"></i>
+				</div>
+			</div>
+			<div class="col-md-12 d-flex info-banner">
+				<div class="col-md-10 offset-md-1 info-heading-text">
+					<h2>WELCOME TO LOREM</h2>
+					<h1>Lorem ipsum dolor sit amet</h1>
+					<div class="buttons d-flex">
+						<a href="#" class="btn">START HERE</a>
+						<a href="https://www.youtube.com/fullyworldwebtutorials" class="btn" target="_blank">SUBSCRIBE US</a>
+					</div>
+				</div>
+				<div class="col-md-1 social-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-dribbble"></i></a>
+					<a href="#"><i class="fa fa-whatsapp"></i></a>
+				</div>
+			</div>
+			<a href="#" class="col-md-2 offset-md-9 angle">
+				<i class="fa fa-angle-down"></i>
+				<h2>SCROLL DOWN</h2>
+			</a>
+		</div>
+	</section>
+
+	<!-- about section -->
+
+	<section class="container about" id="about">
+		<div class="light-box-intro" id="light-box-intro">
+			<i class="fa fa-close" onclick="lightboxout();"></i>
+			<iframe width="500" height="300" src="https://www.youtube.com/embed/01zJV7GMX8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="row">
+			<div class="col-md-12 main-about offset-md-1 d-flex">
+				<div class="col-md-6 about-us-info">
+					<h1 class="about-us-info-heading">
+						ABOUT US
+					</h1>
+					<p class="about-us-info-subheading">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+				<div class="col-md-6 about-us-intro">
+					<h2 class="about-us-intro-heading text-center">INTRO</h2>
+					<div class="image-intro-thumbnail offset-md-3 d-flex" onclick="lightboxappear();">
+						<img src="images/gangster.jpg" class="image-responsive image-intro-about" />
+						<i class="fa fa-play"></i>
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- portfolio section -->
+	<section class="container portfolio" id="portfolio">
+		<div class="row">
+			<div class="col-md-12 portfolio-section">
+				<h1 class="text-center portfolio-heading">PORTFOLIO</h1>
+				<p class="text-center portfolio-subheading">
+					HERE ARE OUR SOME WORKS ..
+				</p>
+			</div>
+			<div class="col-md-11 offset-md-1 portfolio-videos d-flex">
+				<iframe width="300" height="200" src="https://www.youtube.com/embed/KWuZdD1aDPo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="300" height="200" src="https://www.youtube.com/embed/4uoqyeVV8RQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="300" height="200" src="https://www.youtube.com/embed/JEDHlTC701E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="300" height="200" src="https://www.youtube.com/embed/KWuZdD1aDPo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="300" height="200" src="https://www.youtube.com/embed/4uoqyeVV8RQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="300" height="200" src="https://www.youtube.com/embed/JEDHlTC701E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<a href="https://www.youtube.com/fullyworldwebtutorials" target="_blank" class="btn text-center load-btn offset-md-5">LOAD MORE</a>
+		</div>
+	</section>
+
+	<!-- script -->
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
