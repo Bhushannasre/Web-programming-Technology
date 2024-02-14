@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration</title>
+  </head>
+  <body>
+    <script>
+      function ValidateAge() {
+        var age = document.getElementById("age").value;
+        if (age.includes("values")) {
+          document.getElementById().innerHTML = "It cannot contain alphabet";
+          return false;
+        }
+        document.getElementById("errage").innerHTML = "";
+        return true;
+      }
+      //   ValidateAge();
+      var flag = ValidateAge();
+      alert(flag);
+      console.log(flag);
+    </script>
+  </body>
+</html>
