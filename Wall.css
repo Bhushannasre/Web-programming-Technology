@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input {
+  margin-bottom: 10px;
+}
+
+form button {
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#chartContainer {
+  width: 400px;
+  margin: 20px auto;
+}
+
+#chartForm {
+  background-image: url("Wall.jpg");
+  background-size: cover;
+  padding: 100px;
+  width: 300px;
+  margin-inline: 500px;
+}
+#infoTable {
+  margin-inline: 650px;
+  display: inline-block;
+  padding-right: 7px;
+}
